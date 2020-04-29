@@ -193,7 +193,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 1,
-                        "locked": false,
+                        "locked": true,
                         "name": "Intro Video",
                         "pos": {
                             "x": 0.0,
@@ -440,7 +440,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 1,
-                        "locked": false,
+                        "locked": true,
                         "name": "Headset Monitor Capture",
                         "pos": {
                             "x": 0.0,
@@ -469,7 +469,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 2,
-                        "locked": false,
+                        "locked": true,
                         "name": "Headset Audio (mic)",
                         "pos": {
                             "x": 0.0,
@@ -527,7 +527,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 4,
-                        "locked": false,
+                        "locked": true,
                         "name": "Mac Zoom Window",
                         "pos": {
                             "x": 0.0,
@@ -614,8 +614,8 @@
                         "crop_top": 148,
                         "group_item_backup": false,
                         "id": 7,
-                        "locked": false,
-                        "name": "Mac Streamlab Alerts",
+                        "locked": true,
+                        "name": "Mac Streamlabs Alerts",
                         "pos": {
                             "x": 773.5,
                             "y": 0.0
@@ -643,7 +643,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 8,
-                        "locked": false,
+                        "locked": true,
                         "name": "Linux Streamlabs Banner",
                         "pos": {
                             "x": 0.0,
@@ -672,7 +672,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 9,
-                        "locked": false,
+                        "locked": true,
                         "name": "Mac Streamlabs Banner",
                         "pos": {
                             "x": 0.0,
