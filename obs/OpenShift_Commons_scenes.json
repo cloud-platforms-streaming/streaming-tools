@@ -14,7 +14,7 @@
         "id": "pulse_output_capture",
         "mixers": 255,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Desktop Audio",
         "prev_ver": 419430404,
         "private_settings": {},
@@ -30,7 +30,7 @@
         "volume": 0.94196778535842896
     },
     "current_program_scene": "Outro Bumper",
-    "current_scene": "Outro Bumper",
+    "current_scene": "BlueJeans",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -105,16 +105,78 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Red Hat OpenShift Logo",
+            "prev_ver": 419430404,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "/opt/streaming-tools/obs/assets/Logo-Red_Hat-OpenShift-A-Reverse-RGB.png"
+            },
+            "sync": 0,
+            "versioned_id": "image_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Outro Video",
+            "prev_ver": 419430404,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "hw_decode": true,
+                "local_file": "/home/cshort/Videos/Commons/Close_OpenShift bumper_COMMONS_CLOSE_(white)_FINAL2.mp4",
+                "restart_on_activate": true
+            },
+            "sync": 0,
+            "versioned_id": "ffmpeg_source",
+            "volume": 0.94685393571853638
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Image": [],
-                "libobs.show_scene_item.Image": []
+                "libobs.hide_scene_item.Outro Video": [],
+                "libobs.show_scene_item.Outro Video": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Static Image",
+            "name": "Outro Bumper",
             "prev_ver": 419430404,
             "private_settings": {},
             "push-to-mute": false,
@@ -128,8 +190,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1280.0,
-                            "y": 720.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -140,7 +202,7 @@
                         "group_item_backup": false,
                         "id": 1,
                         "locked": false,
-                        "name": "Image",
+                        "name": "Outro Video",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -167,11 +229,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "xcomposite_input",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Image",
+            "name": "Window Capture (Xcomposite)",
             "prev_ver": 419430404,
             "private_settings": {},
             "push-to-mute": false,
@@ -179,10 +241,13 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/opt/streaming-tools/obs/assets/openshift-commons/OpenShiftCommonsThumbnail.png"
+                "capture_window": "35651944\r\nBlue Jeans Network | Video Collaboration in the Cloud - Google Chrome\r\ngoogle-chrome",
+                "exclude_alpha": false,
+                "show_cursor": false,
+                "swap_redblue": false
             },
             "sync": 0,
-            "versioned_id": "image_source",
+            "versioned_id": "xcomposite_input",
             "volume": 1.0
         },
         {
@@ -193,14 +258,16 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Intro Video": [],
-                "libobs.show_scene_item.Intro Video": []
+                "libobs.hide_scene_item.Red Hat OpenShift Logo": [],
+                "libobs.hide_scene_item.Window Capture (Xcomposite)": [],
+                "libobs.show_scene_item.Red Hat OpenShift Logo": [],
+                "libobs.show_scene_item.Window Capture (Xcomposite)": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Intro Bumper",
+            "name": "BlueJeans",
             "prev_ver": 419430404,
             "private_settings": {},
             "push-to-mute": false,
@@ -209,13 +276,13 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 1,
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1280.0,
-                            "y": 720.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -224,9 +291,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 2,
                         "locked": false,
-                        "name": "Intro Video",
+                        "name": "Window Capture (Xcomposite)",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -236,6 +303,35 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Red Hat OpenShift Logo",
+                        "pos": {
+                            "x": 1587.0,
+                            "y": 940.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.23221758008003235,
+                            "y": 0.23203285038471222
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -290,14 +386,14 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Window Capture (Xcomposite)": [],
-                "libobs.show_scene_item.Window Capture (Xcomposite)": []
+                "libobs.hide_scene_item.Intro Video": [],
+                "libobs.show_scene_item.Intro Video": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "BlueJeans",
+            "name": "Intro Bumper",
             "prev_ver": 419430404,
             "private_settings": {},
             "push-to-mute": false,
@@ -306,13 +402,13 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 2,
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1280.0,
-                            "y": 720.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -321,9 +417,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
+                        "id": 1,
                         "locked": false,
-                        "name": "Window Capture (Xcomposite)",
+                        "name": "Intro Video",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -350,11 +446,11 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "xcomposite_input",
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Window Capture (Xcomposite)",
+            "name": "Image",
             "prev_ver": 419430404,
             "private_settings": {},
             "push-to-mute": false,
@@ -362,13 +458,10 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "capture_window": "20971548\r\nBlue Jeans Network | Video Collaboration in the Cloud - Google Chrome\r\ngoogle-chrome",
-                "exclude_alpha": false,
-                "show_cursor": false,
-                "swap_redblue": false
+                "file": "/opt/streaming-tools/obs/assets/openshift-commons/OpenShiftCommonsThumbnail.png"
             },
             "sync": 0,
-            "versioned_id": "xcomposite_input",
+            "versioned_id": "image_source",
             "volume": 1.0
         },
         {
@@ -379,14 +472,14 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Outro Video": [],
-                "libobs.show_scene_item.Outro Video": []
+                "libobs.hide_scene_item.Image": [],
+                "libobs.show_scene_item.Image": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Outro Bumper",
+            "name": "Static Image",
             "prev_ver": 419430404,
             "private_settings": {},
             "push-to-mute": false,
@@ -400,8 +493,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 1280.0,
-                            "y": 720.0
+                            "x": 1920.0,
+                            "y": 1080.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -412,7 +505,7 @@
                         "group_item_backup": false,
                         "id": 1,
                         "locked": false,
-                        "name": "Outro Video",
+                        "name": "Image",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -431,43 +524,6 @@
             "sync": 0,
             "versioned_id": "scene",
             "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "MediaSource.Pause": [],
-                "MediaSource.Play": [],
-                "MediaSource.Restart": [],
-                "MediaSource.Stop": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Outro Video",
-            "prev_ver": 419430404,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "clear_on_media_end": false,
-                "hw_decode": true,
-                "local_file": "/home/cshort/Videos/Commons/Close_OpenShift bumper_COMMONS_CLOSE_(white)_FINAL2.mp4",
-                "restart_on_activate": true
-            },
-            "sync": 0,
-            "versioned_id": "ffmpeg_source",
-            "volume": 0.94685393571853638
         }
     ],
     "transition_duration": 300,
