@@ -17,7 +17,9 @@
         "muted": true,
         "name": "Mic/Aux",
         "prev_ver": 419430408,
-        "private_settings": {},
+        "private_settings": {
+            "volume_locked": true
+        },
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -44,7 +46,7 @@
         "id": "pulse_output_capture",
         "mixers": 0,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Desktop Audio",
         "prev_ver": 419430408,
         "private_settings": {},
@@ -59,8 +61,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "OpenShift Intro Bumper",
-    "current_scene": "OpenShift Intro Bumper",
+    "current_program_scene": "Ended",
+    "current_scene": "Main Zoom Scene (No Banner)",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -121,6 +123,9 @@
             "name": "Main Zoom Scene"
         },
         {
+            "name": "Main Zoom Scene (No Banner)"
+        },
+        {
             "name": "Break"
         },
         {
@@ -131,6 +136,315 @@
         }
     ],
     "sources": [
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Headset Audio (mic)": [],
+                "libobs.hide_scene_item.Headset Monitor Capture": [],
+                "libobs.hide_scene_item.Linux Streamlabs Alerts": [],
+                "libobs.hide_scene_item.Linux Streamlabs Banner": [],
+                "libobs.hide_scene_item.Linux Zoom Window": [],
+                "libobs.hide_scene_item.Mac Streamlabs Alerts": [],
+                "libobs.hide_scene_item.Mac Streamlabs Banner": [],
+                "libobs.hide_scene_item.Mac Zoom Window": [],
+                "libobs.hide_scene_item.Top Banner": [],
+                "libobs.show_scene_item.Headset Audio (mic)": [],
+                "libobs.show_scene_item.Headset Monitor Capture": [],
+                "libobs.show_scene_item.Linux Streamlabs Alerts": [],
+                "libobs.show_scene_item.Linux Streamlabs Banner": [],
+                "libobs.show_scene_item.Linux Zoom Window": [],
+                "libobs.show_scene_item.Mac Streamlabs Alerts": [],
+                "libobs.show_scene_item.Mac Streamlabs Banner": [],
+                "libobs.show_scene_item.Mac Zoom Window": [],
+                "libobs.show_scene_item.Top Banner": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Main Zoom Scene (No Banner)",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 9,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Headset Monitor Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Headset Audio (mic)",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Linux Zoom Window",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": false,
+                        "name": "Mac Zoom Window",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": false,
+                        "name": "Top Banner",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 150,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 148,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": false,
+                        "name": "Linux Streamlabs Alerts",
+                        "pos": {
+                            "x": 773.5,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.46625000238418579,
+                            "y": 0.46666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 150,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 148,
+                        "group_item_backup": false,
+                        "id": 7,
+                        "locked": false,
+                        "name": "Mac Streamlabs Alerts",
+                        "pos": {
+                            "x": 773.5,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.46625000238418579,
+                            "y": 0.46666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 8,
+                        "locked": false,
+                        "name": "Linux Streamlabs Banner",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 9.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.93111109733581543,
+                            "y": 0.93000000715255737
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 9,
+                        "locked": false,
+                        "name": "Mac Streamlabs Banner",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 9.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.93111109733581543,
+                            "y": 0.93000000715255737
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    }
+                ]
+            },
+            "sync": 0,
+            "versioned_id": "scene",
+            "volume": 1.0
+        },
         {
             "balance": 0.5,
             "deinterlace_field_order": 0,
@@ -428,7 +742,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "capture_window": "115356808\r\nZoom\r\nzoom",
+                "capture_window": "44040331\r\nZoom Meeting\r\nzoom",
                 "show_cursor": false,
                 "swap_redblue": false
             },
@@ -1138,7 +1452,7 @@
             "id": "ffmpeg_source",
             "mixers": 255,
             "monitoring_type": 0,
-            "muted": false,
+            "muted": true,
             "name": "Stream Over",
             "prev_ver": 419430408,
             "private_settings": {},
