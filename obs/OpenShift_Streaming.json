@@ -1078,7 +1078,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/opt/streaming-tools/obs/assets/topbanner-150h.png"
+                "file": "/opt/streaming-tools/obs/assets/OpenShift_Twitch_VidBanner_01.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
