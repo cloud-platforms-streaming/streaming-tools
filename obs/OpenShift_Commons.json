@@ -632,7 +632,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/opt/streaming-tools/obs/assets/OpenShiftCommons-700x125.png"
+                "file": "/opt/streaming-tools/obs/assets/openshift-commons/OpenShiftCommons-700x125.png"
             },
             "sync": 0,
             "versioned_id": "image_source",
