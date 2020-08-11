@@ -61,7 +61,7 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Main Zoom Scene",
+    "current_program_scene": "Starting Soon",
     "current_scene": "Main Zoom Scene",
     "current_transition": "Fade",
     "groups": [],
@@ -651,7 +651,7 @@
                         "align": 5,
                         "bounds": {
                             "x": 1920.0,
-                            "y": 1080.0
+                            "y": 936.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -661,11 +661,11 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 4,
-                        "locked": true,
+                        "locked": false,
                         "name": "Zoom Window",
                         "pos": {
                             "x": 0.0,
-                            "y": 0.0
+                            "y": 144.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -690,7 +690,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 5,
-                        "locked": true,
+                        "locked": false,
                         "name": "Top Banner",
                         "pos": {
                             "x": 0.0,
@@ -818,7 +818,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "owner_name": "zoom.us",
-                "window": 51741,
+                "window": "Zoom Meeting:ZPContentViewWndClass:Zoom.exe",
                 "window_name": "Zoom"
             },
             "sync": 0,
@@ -943,7 +943,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "clear_on_media_end": true,
+                "clear_on_media_end": false,
                 "hw_decode": true,
                 "local_file": "C:/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_INTRO_(white)_FINAL.mp4"
             },
