@@ -1,0 +1,7 @@
+{
+    "bitrate": 4500,
+    "keyint_sec": 2,
+    "preset": "veryfast",
+    "profile": "high",
+    "tune": "zerolatency"
+}

@@ -1,7 +1,7 @@
 {
     "settings": {
         "bwtest": false,
-        "key": ""
+        "key": "",
         "server": "rtmp://live.restream.io/live",
         "service": "Restream.io - RTMP"
     },
