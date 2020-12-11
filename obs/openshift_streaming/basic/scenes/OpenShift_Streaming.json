@@ -227,7 +227,7 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "local_file": "/opt/openshift-streaming/streaming-tools/obs/assets/OpenShift_Twitch_StreamEnding-.mp4",
+                "local_file": "/opt/streaming-tools/obs/assets/OpenShift_Twitch_StreamEnding-.mp4",
                 "looping": true
             },
             "sync": 0,
@@ -325,7 +325,7 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "local_file": "/opt/openshift-streaming/streaming-tools/obs/assets/OpenShift_Twitch_BRB.mp4",
+                "local_file": "/opt/streaming-tools/obs/assets/OpenShift_Twitch_BRB.mp4",
                 "looping": true
             },
             "sync": 0,
@@ -424,7 +424,7 @@
                 "clear_on_media_end": false,
                 "close_when_inactive": false,
                 "hw_decode": true,
-                "local_file": "/opt/openshift-streaming/streaming-tools/obs/assets/OpehShift_Twitch_StartingSoon.mp4",
+                "local_file": "/opt/streaming-tools/obs/assets/OpehShift_Twitch_StartingSoon.mp4",
                 "looping": true
             },
             "sync": 0,
@@ -602,7 +602,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/opt/openshift-streaming/streaming-tools/obs/assets/OpenShift_Twitch_VidBanner_01_Grey.png",
+                "file": "/opt/streaming-tools/obs/assets/OpenShift_Twitch_VidBanner_01_Grey.png",
                 "unload": false
             },
             "sync": 0,
@@ -1181,7 +1181,7 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "local_file": "/opt/openshift-streaming/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_INTRO_(white)_FINAL.mp4"
+                "local_file": "/opt/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_INTRO_(white)_FINAL.mp4"
             },
             "sync": 0,
             "versioned_id": "ffmpeg_source",
@@ -1217,7 +1217,7 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "local_file": "/opt/openshift-streaming/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_CLOSE_(white)_FINAL2.mp4"
+                "local_file": "/opt/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_CLOSE_(white)_FINAL2.mp4"
             },
             "sync": 0,
             "versioned_id": "ffmpeg_source",
