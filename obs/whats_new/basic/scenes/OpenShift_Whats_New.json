@@ -288,7 +288,7 @@
             "settings": {
                 "clear_on_media_end": false,
                 "hw_decode": true,
-                "local_file": "/opt/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_INTRO_(white)_FINAL.mp4"
+                "local_file": "C:/Users/streamer/repo/streaming-tools/obs/assets/3208_OpenShift bumper_GENERAL_INTRO_(white)_FINAL.mp4"
             },
             "sync": 0,
             "versioned_id": "ffmpeg_source",
@@ -1168,7 +1168,7 @@
                 "clear_on_media_end": false,
                 "close_when_inactive": false,
                 "hw_decode": true,
-                "local_file": "/opt/streaming-tools/obs/assets/OpehShift_Twitch_StartingSoon.mp4",
+                "local_file": "C:/Users/streamer/repo/streaming-tools/obs/assets/OpehShift_Twitch_StartingSoon.mp4",
                 "looping": true
             },
             "sync": 0,
