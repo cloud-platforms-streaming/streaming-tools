@@ -4,7 +4,7 @@
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
-        "flags": 0,
+        "flags": 2,
         "hotkeys": {
             "libobs.mute": [],
             "libobs.push-to-mute": [],
@@ -36,7 +36,7 @@
         "deinterlace_field_order": 0,
         "deinterlace_mode": 0,
         "enabled": true,
-        "flags": 0,
+        "flags": 2,
         "hotkeys": {
             "libobs.mute": [],
             "libobs.push-to-mute": [],
@@ -61,8 +61,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Main Zoom Scene",
-    "current_scene": "Main Zoom Scene",
+    "current_program_scene": "Main Scene",
+    "current_scene": "Main Scene",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -95,7 +95,7 @@
         },
         "scripts-tool": []
     },
-    "name": "OpenShift Streaming",
+    "name": "OpenShift_What's_New",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -129,10 +129,7 @@
             "name": "OpenShift Intro Bumper"
         },
         {
-            "name": "Main Zoom Scene"
-        },
-        {
-            "name": "Main Zoom Scene (No Banner)"
+            "name": "Main Scene"
         },
         {
             "name": "Break"
@@ -151,21 +148,12 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {
-                "MediaSource.Pause": [],
-                "MediaSource.Play": [],
-                "MediaSource.Restart": [],
-                "MediaSource.Stop": [],
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "ffmpeg_source",
-            "mixers": 255,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "BRB",
+            "name": "Lower Third",
             "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
@@ -173,13 +161,65 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "clear_on_media_end": false,
-                "hw_decode": true,
-                "local_file": "C:/streaming-tools/obs/assets/OpenShift_Twitch_BRB.mp4",
-                "looping": true
+                "file": "C:/streaming-tools/obs/assets/sandbox-lower-third-with-qr-code.png"
             },
             "sync": 0,
-            "versioned_id": "ffmpeg_source",
+            "versioned_id": "image_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "wasapi_input_capture",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Audio Input Capture",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {},
+            "sync": 0,
+            "versioned_id": "wasapi_input_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Primetime",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "compatibility": true,
+                "cursor": false,
+                "window": "BlueJeans Network | Video Collaboration in the Cloud - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
+            },
+            "sync": 0,
+            "versioned_id": "window_capture",
             "volume": 1.0
         },
         {
@@ -205,129 +245,6 @@
             },
             "sync": 0,
             "versioned_id": "image_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Audio Input Capture": [],
-                "libobs.hide_scene_item.Streamlabs Alerts": [],
-                "libobs.hide_scene_item.Zoom Window": [],
-                "libobs.show_scene_item.Audio Input Capture": [],
-                "libobs.show_scene_item.Streamlabs Alerts": [],
-                "libobs.show_scene_item.Zoom Window": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Main Zoom Scene (No Banner)",
-            "prev_ver": 436273153,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 11,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": false,
-                        "name": "Zoom Window",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 150,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 148,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": false,
-                        "name": "Streamlabs Alerts",
-                        "pos": {
-                            "x": 773.5,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.46625000238418579,
-                            "y": 0.46666666865348816
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 10,
-                        "locked": false,
-                        "name": "Audio Input Capture",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "versioned_id": "scene",
             "volume": 1.0
         },
         {
@@ -497,13 +414,18 @@
             "deinterlace_field_order": 0,
             "deinterlace_mode": 0,
             "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "window_capture",
+            "flags": 2,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "pulse_output_capture",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Zoom Window",
+            "name": "Headset Monitor Capture",
             "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
@@ -511,9 +433,63 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "cursor": false,
+                "device_id": "default"
+            },
+            "sync": 0,
+            "versioned_id": "pulse_output_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 2,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "pulse_input_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Headset Audio (mic)",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "device_id": "default"
+            },
+            "sync": 0,
+            "versioned_id": "pulse_input_capture",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Mac Zoom Window",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
                 "owner_name": "zoom.us",
-                "window": "Zoom Meeting:ZPContentViewWndClass:Zoom.exe",
+                "window": 51741,
                 "window_name": "Zoom"
             },
             "sync": 0,
@@ -527,25 +503,95 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "linuxbrowser.reloadpage": []
+            },
+            "id": "linuxbrowser-source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Linux Streamlabs Alerts",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 600,
+                "url": "https://streamlabs.com/alert-box/v3/715D4DD371D345ED3A44",
+                "width": 800
+            },
+            "sync": 0,
+            "versioned_id": "linuxbrowser-source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "xcomposite_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Linux Zoom Window",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "capture_window": "69533635\r\nZoom Meeting\r\nzoom",
+                "show_cursor": false,
+                "swap_redblue": false
+            },
+            "sync": 0,
+            "versioned_id": "xcomposite_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Audio Input Capture": [],
+                "libobs.hide_scene_item.Cal QR Code": [],
+                "libobs.hide_scene_item.Headset Audio (mic)": [],
+                "libobs.hide_scene_item.Headset Monitor Capture": [],
+                "libobs.hide_scene_item.Linux Streamlabs Alerts": [],
+                "libobs.hide_scene_item.Linux Streamlabs Banner": [],
+                "libobs.hide_scene_item.Linux Zoom Window": [],
                 "libobs.hide_scene_item.Lower Third": [],
-                "libobs.hide_scene_item.Streamlabs Alerts": [],
-                "libobs.hide_scene_item.Streamlabs Banner": [],
+                "libobs.hide_scene_item.Mac Streamlabs Alerts": [],
+                "libobs.hide_scene_item.Mac Streamlabs Banner": [],
+                "libobs.hide_scene_item.Mac Zoom Window": [],
+                "libobs.hide_scene_item.Primetime": [],
                 "libobs.hide_scene_item.Top Banner": [],
-                "libobs.hide_scene_item.Zoom Window": [],
                 "libobs.show_scene_item.Audio Input Capture": [],
+                "libobs.show_scene_item.Cal QR Code": [],
+                "libobs.show_scene_item.Headset Audio (mic)": [],
+                "libobs.show_scene_item.Headset Monitor Capture": [],
+                "libobs.show_scene_item.Linux Streamlabs Alerts": [],
+                "libobs.show_scene_item.Linux Streamlabs Banner": [],
+                "libobs.show_scene_item.Linux Zoom Window": [],
                 "libobs.show_scene_item.Lower Third": [],
-                "libobs.show_scene_item.Streamlabs Alerts": [],
-                "libobs.show_scene_item.Streamlabs Banner": [],
-                "libobs.show_scene_item.Top Banner": [],
-                "libobs.show_scene_item.Zoom Window": []
+                "libobs.show_scene_item.Mac Streamlabs Alerts": [],
+                "libobs.show_scene_item.Mac Streamlabs Banner": [],
+                "libobs.show_scene_item.Mac Zoom Window": [],
+                "libobs.show_scene_item.Primetime": [],
+                "libobs.show_scene_item.Top Banner": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Main Zoom Scene",
+            "name": "Main Scene",
             "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
@@ -554,13 +600,13 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 20,
+                "id_counter": 24,
                 "items": [
                     {
                         "align": 5,
                         "bounds": {
                             "x": 1920.0,
-                            "y": 836.0
+                            "y": 1080.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -569,12 +615,41 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Zoom Window",
+                        "id": 3,
+                        "locked": false,
+                        "name": "Linux Zoom Window",
                         "pos": {
                             "x": 0.0,
-                            "y": 144.0
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 22,
+                        "locked": false,
+                        "name": "Primetime",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -598,12 +673,12 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 20,
-                        "locked": true,
-                        "name": "Lower Third",
+                        "id": 23,
+                        "locked": false,
+                        "name": "Audio Input Capture",
                         "pos": {
                             "x": 0.0,
-                            "y": 930.0
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -613,6 +688,93 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Headset Monitor Capture",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": true,
+                        "name": "Headset Audio (mic)",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": true,
+                        "name": "Mac Zoom Window",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
@@ -646,6 +808,35 @@
                     {
                         "align": 5,
                         "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 150,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 148,
+                        "group_item_backup": false,
+                        "id": 6,
+                        "locked": true,
+                        "name": "Linux Streamlabs Alerts",
+                        "pos": {
+                            "x": 773.5,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.46625000238418579,
+                            "y": 0.46666666865348816
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
                             "x": 1.0,
                             "y": 1.0
                         },
@@ -658,7 +849,7 @@
                         "group_item_backup": false,
                         "id": 7,
                         "locked": true,
-                        "name": "Streamlabs Alerts",
+                        "name": "Mac Streamlabs Alerts",
                         "pos": {
                             "x": 773.5,
                             "y": 0.0
@@ -685,9 +876,38 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
+                        "id": 8,
+                        "locked": true,
+                        "name": "Linux Streamlabs Banner",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 9.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.93111109733581543,
+                            "y": 0.93000000715255737
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
                         "id": 9,
                         "locked": true,
-                        "name": "Streamlabs Banner",
+                        "name": "Mac Streamlabs Banner",
                         "pos": {
                             "x": 0.0,
                             "y": 9.0
@@ -714,12 +934,41 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 19,
-                        "locked": true,
-                        "name": "Audio Input Capture",
+                        "id": 21,
+                        "locked": false,
+                        "name": "Cal QR Code",
                         "pos": {
+                            "x": 10.0,
+                            "y": 905.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.072463765740394592,
+                            "y": 0.072463765740394592
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
                             "x": 0.0,
                             "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 24,
+                        "locked": false,
+                        "name": "Lower Third",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 930.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -777,7 +1026,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Streamlabs Alerts",
+            "name": "Mac Streamlabs Alerts",
             "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
@@ -807,7 +1056,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Streamlabs Banner",
+            "name": "Mac Streamlabs Banner",
             "prev_ver": 436273153,
             "private_settings": {},
             "push-to-mute": false,
@@ -821,6 +1070,35 @@
             },
             "sync": 0,
             "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "linuxbrowser.reloadpage": []
+            },
+            "id": "linuxbrowser-source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Linux Streamlabs Banner",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 200,
+                "url": "https://streamlabs.com/widgets/sponsor-banner?token=715D4DD371D345ED3A44",
+                "width": 900
+            },
+            "sync": 0,
+            "versioned_id": "linuxbrowser-source",
             "volume": 1.0
         },
         {
@@ -849,7 +1127,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 2,
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
@@ -865,7 +1143,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 1,
-                        "locked": true,
+                        "locked": false,
                         "name": "Starting Soon Animation",
                         "pos": {
                             "x": 0.0,
@@ -893,18 +1171,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
+                        "id": 3,
+                        "locked": false,
                         "name": "Cal QR Code",
                         "pos": {
-                            "x": 15.0,
-                            "y": 864.0
+                            "x": 10.0,
+                            "y": 858.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.088274046778678894,
-                            "y": 0.088274046778678894
+                            "x": 0.092226617038249969,
+                            "y": 0.092226617038249969
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -962,9 +1240,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.BRB": [],
-                "libobs.hide_scene_item.Cal QR Code": [],
-                "libobs.show_scene_item.BRB": [],
-                "libobs.show_scene_item.Cal QR Code": []
+                "libobs.show_scene_item.BRB": []
             },
             "id": "scene",
             "mixers": 0,
@@ -979,7 +1255,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 4,
+                "id_counter": 1,
                 "items": [
                     {
                         "align": 5,
@@ -994,7 +1270,7 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 4,
+                        "id": 1,
                         "locked": false,
                         "name": "BRB",
                         "pos": {
@@ -1009,40 +1285,48 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Cal QR Code",
-                        "pos": {
-                            "x": 15.0,
-                            "y": 911.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.067632846534252167,
-                            "y": 0.067632846534252167
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
                     }
                 ]
             },
             "sync": 0,
             "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "BRB",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "clear_on_media_end": false,
+                "hw_decode": true,
+                "local_file": "C:/streaming-tools/obs/assets/OpenShift_Twitch_BRB.mp4",
+                "looping": true
+            },
+            "sync": 0,
+            "versioned_id": "ffmpeg_source",
             "volume": 1.0
         },
         {
@@ -1071,7 +1355,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 2,
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
@@ -1087,7 +1371,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 1,
-                        "locked": false,
+                        "locked": true,
                         "name": "Stream Over",
                         "pos": {
                             "x": 0.0,
@@ -1115,18 +1399,18 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
+                        "id": 3,
+                        "locked": true,
                         "name": "Cal QR Code",
                         "pos": {
                             "x": 15.0,
-                            "y": 923.0
+                            "y": 918.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.062362756580114365,
-                            "y": 0.062362756580114365
+                            "x": 0.064558632671833038,
+                            "y": 0.064558632671833038
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1233,59 +1517,6 @@
             },
             "sync": 0,
             "versioned_id": "scene",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 2,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "wasapi_input_capture",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Audio Input Capture",
-            "prev_ver": 436273153,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {},
-            "sync": 0,
-            "versioned_id": "wasapi_input_capture",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Lower Third",
-            "prev_ver": 436273153,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/streaming-tools/obs/assets/sandbox-lower-third-with-qr-code.png"
-            },
-            "sync": 0,
-            "versioned_id": "image_source",
             "volume": 1.0
         }
     ],
