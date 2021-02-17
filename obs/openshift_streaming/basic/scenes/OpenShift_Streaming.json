@@ -560,7 +560,7 @@
                         "align": 5,
                         "bounds": {
                             "x": 1920.0,
-                            "y": 836.0
+                            "y": 921.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 2,
@@ -570,11 +570,11 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 4,
-                        "locked": true,
+                        "locked": false,
                         "name": "Zoom Window",
                         "pos": {
                             "x": 0.0,
-                            "y": 144.0
+                            "y": 106.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -599,11 +599,11 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 20,
-                        "locked": true,
+                        "locked": false,
                         "name": "Lower Third",
                         "pos": {
                             "x": 0.0,
-                            "y": 930.0
+                            "y": 980.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
