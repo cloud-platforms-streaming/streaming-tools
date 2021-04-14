@@ -61,8 +61,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Main Zoom Scene",
-    "current_scene": "Main Zoom Scene",
+    "current_program_scene": "Ended",
+    "current_scene": "Ended",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
