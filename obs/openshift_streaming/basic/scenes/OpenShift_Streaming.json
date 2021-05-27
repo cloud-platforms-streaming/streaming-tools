@@ -61,8 +61,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Starting Soon",
-    "current_scene": "Starting Soon",
+    "current_program_scene": "Main Zoom Scene",
+    "current_scene": "Main Zoom Scene",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -95,7 +95,7 @@
         },
         "scripts-tool": []
     },
-    "name": "OpenShift Streaming",
+    "name": "OpenShift_Streaming",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -145,6 +145,31 @@
         }
     ],
     "sources": [
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Future",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/streaming-tools/obs/assets/future-lower-third.png"
+            },
+            "sync": 0,
+            "versioned_id": "image_source",
+            "volume": 1.0
+        },
         {
             "balance": 0.5,
             "deinterlace_field_order": 0,
@@ -706,12 +731,14 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Audio Input Capture": [],
+                "libobs.hide_scene_item.Future": [],
                 "libobs.hide_scene_item.Lower Third": [],
                 "libobs.hide_scene_item.Streamlabs Alerts": [],
                 "libobs.hide_scene_item.Streamlabs Banner": [],
                 "libobs.hide_scene_item.Top Banner": [],
                 "libobs.hide_scene_item.Zoom Window": [],
                 "libobs.show_scene_item.Audio Input Capture": [],
+                "libobs.show_scene_item.Future": [],
                 "libobs.show_scene_item.Lower Third": [],
                 "libobs.show_scene_item.Streamlabs Alerts": [],
                 "libobs.show_scene_item.Streamlabs Banner": [],
@@ -731,7 +758,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 20,
+                "id_counter": 21,
                 "items": [
                     {
                         "align": 5,
@@ -751,7 +778,7 @@
                         "name": "Zoom Window",
                         "pos": {
                             "x": 0.0,
-                            "y": 106.0
+                            "y": 104.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -790,6 +817,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 21,
+                        "locked": true,
+                        "name": "Future",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 980.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     },
                     {
                         "align": 5,
