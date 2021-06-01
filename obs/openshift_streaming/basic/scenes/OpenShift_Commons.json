@@ -29,8 +29,8 @@
         "versioned_id": "pulse_output_capture",
         "volume": 1.0
     },
-    "current_program_scene": "Stream Over",
-    "current_scene": "Stream Over",
+    "current_program_scene": "BlueJeans",
+    "current_scene": "BlueJeans",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -118,8 +118,45 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "MediaSource.Pause": [],
+                "MediaSource.Play": [],
+                "MediaSource.Restart": [],
+                "MediaSource.Stop": [],
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "ffmpeg_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Elevator Music",
+            "prev_ver": 436273153,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "local_file": "C:/streaming-tools/obs/assets/elevator-music.mp3",
+                "looping": true
+            },
+            "sync": 0,
+            "versioned_id": "ffmpeg_source",
+            "volume": 0.0030941269360482693
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Elevator Music": [],
                 "libobs.hide_scene_item.Starting": [],
+                "libobs.show_scene_item.Elevator Music": [],
                 "libobs.show_scene_item.Starting": []
             },
             "id": "scene",
@@ -135,7 +172,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 2,
+                "id_counter": 3,
                 "items": [
                     {
                         "align": 5,
@@ -153,6 +190,35 @@
                         "id": 2,
                         "locked": false,
                         "name": "Starting",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Elevator Music",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -208,9 +274,11 @@
                 "libobs.hide_scene_item.Audio Input Capture": [],
                 "libobs.hide_scene_item.Bluejeans": [],
                 "libobs.hide_scene_item.Commons Banner": [],
+                "libobs.hide_scene_item.Elevator Music": [],
                 "libobs.show_scene_item.Audio Input Capture": [],
                 "libobs.show_scene_item.Bluejeans": [],
-                "libobs.show_scene_item.Commons Banner": []
+                "libobs.show_scene_item.Commons Banner": [],
+                "libobs.show_scene_item.Elevator Music": []
             },
             "id": "scene",
             "mixers": 0,
@@ -225,7 +293,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 11,
+                "id_counter": 12,
                 "items": [
                     {
                         "align": 5,
@@ -313,6 +381,35 @@
                         },
                         "scale_filter": "disable",
                         "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 12,
+                        "locked": false,
+                        "name": "Elevator Music",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
                     }
                 ]
             },
