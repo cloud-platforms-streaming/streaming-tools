@@ -173,7 +173,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "local_file": "C:/streaming-tools/obs/assets/elevator music.mp3",
+                "local_file": "C:/streaming-tools/obs/assets/elevator-music.mp3",
                 "looping": true
             },
             "sync": 0,
