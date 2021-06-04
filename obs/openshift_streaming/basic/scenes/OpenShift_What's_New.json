@@ -170,7 +170,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "local_file": "C:/streaming-tools/obs/assets/elevator music.mp3",
+                "local_file": "C:/streaming-tools/obs/assets/elevator-music.mp3",
                 "looping": true
             },
             "sync": 0,
@@ -1061,7 +1061,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 26,
-                        "locked": false,
+                        "locked": true,
                         "name": "Elevator Music",
                         "pos": {
                             "x": 0.0,

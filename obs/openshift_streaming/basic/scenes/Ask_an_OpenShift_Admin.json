@@ -1604,7 +1604,7 @@
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 26,
-                        "locked": false,
+                        "locked": true,
                         "name": "Elevator Music",
                         "pos": {
                             "x": 0.0,
