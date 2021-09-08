@@ -4,7 +4,7 @@ This directory houses assets needed for streaming when using [**OBS**](https://o
 
 ## HOWTO install assets so they "just work"
 
-In an attempt to make this as simple as possible, we have built this OBS Scene to be compliant with Mac and Linux. We've tried to make the installation process just as simple:
+Since OBS is a first class citizen on Windows, the decision has been made to [use Windows VM in Azure]() to produce livestreams with OBS.
 
 1. Clone this repo into `/opt`
 1. In OBS remove any existing **OpenShift Streaming** Scenes from the Scene Collection menu  
