@@ -13,12 +13,8 @@ Since OBS is a first class citizen on Windows, the decision has been made to [us
 
 ![Import the OpenShift Streaming Scene](../img/scene-import.png)
 
-## What's in the Scene
-
-TODO: Describe Scene and HOWTO use it effectively; sound settings are going to be tough
-
 ### Breaks, in stream commercials, etc.
 
-Breaks are often a thing in longer lives streams. The a psychological theory that 50 minutes of instruction followed by a ten minute break is a solid way to provide instruction in immersive environments. Twitch is not a fully immersive environment, but breaks are often expected during longer Twitch streams
+Breaks are often a thing in longer lives streams. A psychological theory that 50 minutes of instruction followed by a ten minute break is a solid way to provide instruction in immersive environments. Twitch is not a fully immersive environment, but breaks are often expected during longer Twitch streams
 
 There is a "[Be Right Back](obs/assets/OpenShift_Twitch_BRB.mp4)" animation for use here if you want to take a break, change the OBS scene to Break.
